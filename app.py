@@ -1,4 +1,3 @@
-
 import streamlit as st
 import tensorflow as tf
 
@@ -106,7 +105,7 @@ class_names = ['apple_pie',
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model("/content/drive/MyDrive/tf_course/101_food_data_fine_tune_all")
+    model = tf.keras.models.load_model("./101_food_data_fine_tune_all")
     return model
 
 with st.spinner("Model is being loaded..."):
