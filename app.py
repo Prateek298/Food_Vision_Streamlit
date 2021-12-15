@@ -105,7 +105,7 @@ class_names = ['apple_pie',
 
 MODEL_PATH = "101_food_data_fine_tune_all"
 
-@st.cache(allow_output_mutation=True)
+# @st.cache(allow_output_mutation=True)
 def load_model(model_path):
     model = tf.keras.models.load_model(model_path)
     return model
