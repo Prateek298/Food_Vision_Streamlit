@@ -106,7 +106,7 @@ class_names = ['apple_pie',
 @st.cache(allow_output_mutation=True)
 def load_model():
     model = tf.keras.models.load_model("./101_food_data_fine_tune_all")
-    model.make_predict_function()
+    model._make_predict_function()
     return model
 
 with st.spinner("Model is being loaded..."):
